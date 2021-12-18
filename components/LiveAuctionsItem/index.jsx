@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Countdown from 'on-react-countdown';
 
 function LiveAuctionsItem({imgBig , imgSm , title , text}){
   return(
@@ -13,7 +14,7 @@ function LiveAuctionsItem({imgBig , imgSm , title , text}){
                 </div>
                 <span><span className="g-text">Price</span> 0.081 ETH <span className="g-text ml-15">1 of 10</span></span> 
                 <div className="count-down titled circled text-center">
-                    <div className="simple_timer"></div>
+                    <Countdown end={1893456000} />
                     <div className="admire">
                       <Link href="/itemdetails"><a className="btn more-btn w-100 text-center my-0 mx-auto ">Place Bid</a></Link>
                     </div>

@@ -1130,9 +1130,10 @@ ol {
 }
 .pricing-item span {
     font-size: 14px;
-    display: inline-block;
+    display: flex;
     color: #00e0c4;
     margin: 0 0 7px;
+    justify-content:space-evenly;
 }
 .pricing-item label {
     height: 40px;
@@ -1306,9 +1307,10 @@ ol {
 }
 .pricing-item span {
     font-size: 14px;
-    display: inline-block;
+    display: flex;
     color: #00e0c4;
     margin: 0 0 7px;
+    justify-content:space-evenly;
 }
 .pricing-item label {
     height: 40px;
@@ -2234,9 +2236,10 @@ textarea:required {
 }
 .pricing-item span {
     font-size: 14px;
-    display: inline-block;
+    display: flex;
     color: #00e0c4;
     margin: 0 0 7px;
+    justify-content:space-evenly;
 }
 .pricing-item label {
     height: 40px;
@@ -2908,4 +2911,43 @@ textarea:required {
     font-weight: normal !important;
     margin-top: 5px !important;
     text-transform: lowercase !important;
+}
+
+.Countdown{
+    display: flex;
+    justify-content:space-evenly;
+    color: #fff;
+}
+
+.Countdown .Countdown-days,
+.Countdown .Countdown-hours,
+.Countdown .Countdown-minutes,
+.Countdown .Countdown-seconds{
+    display: flex;
+    flex-direction: column;
+}
+
+.Countdown .Countdown-days-value,
+.Countdown .Countdown-hours-value,
+.Countdown .Countdown-minutes-value,
+.Countdown .Countdown-seconds-value{
+    background-color: #290571;
+    padding: 0.7rem;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+}
+
+.Countdown .Countdown-days-text,
+.Countdown .Countdown-hours-text,
+.Countdown .Countdown-minutes-text,
+.Countdown .Countdown-seconds-text{
+    font-size: .8rem;
+}
+
+.pricing-item .wraper .count-down{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
